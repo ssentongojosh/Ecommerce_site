@@ -1,0 +1,181 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  min-height: 100vh;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  margin: 10px;
+}
+
+input#search {
+  width: 330px;
+  height: 28px;
+  border-radius: 15px;
+}
+
+input#search::placeholder {
+  padding: 5px;
+}
+
+div.search {
+  position: relative;
+}
+span.search-icon {
+  position: absolute;
+  top: 4px;
+  right: 15px;
+}
+
+main div.categories {
+  display: flex;
+  justify-content: space-between;
+  margin: 10px;
+}
+
+img.logo {
+  width: 200px;
+  height: 200px;
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.5);
+  border-radius: 10px;
+  margin: 10px;
+  background-color: brown;
+}
+
+div.footer {
+  display: flex;
+  justify-content: space-around;
+}
+
+div.quick {
+  display: flex;
+  flex-direction: column;
+}
+
+.quick a {
+  text-decoration: none;
+}
+
+div.contact p {
+  overflow-wrap: break-word;
+}
+
+.footer{
+    background-color: gray;
+    margin-top: 20px;
+}
+
+.footer+p:last-child{
+    background-color:rgba(0, 0, 0, 0.1);
+    text-align: center;
+    padding: 1rem;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 2rem;
+  background: white;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.logo p {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #2c3e50;
+  margin: 0;
+}
+
+.search-icon {
+  right: 10px !important;
+  color: #666;
+}
+
+.profile, .cart {
+  cursor: pointer;
+  padding: 0.5rem;
+  transition: all 0.3s ease;
+}
+
+.profile:hover, .cart:hover {
+  color: #e74c3c;
+}
+
+
+div.search {
+  flex: 0 1 500px;
+}
+
+input#search {
+  width: 100%;
+  padding: 0.8rem 2rem;
+  border: 1px solid #ecf0f1;
+  background: #f8f9fa;
+  transition: all 0.3s ease;
+}
+
+input#search:focus {
+  outline: none;
+  border-color: #3498db;
+  background: white;
+}
+
+main div.categories {
+  display: flex;
+  justify-content: space-between;
+  gap: 2rem;
+  padding: 1rem 2rem;
+  background: #2c3e50;
+  color: white;
+  position: sticky;
+  top: 0;
+  z-index: 999;
+}
+
+.categories div {
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  transition: all 0.3s ease;
+}
+
+.categories div:hover {
+  background: #34495e;
+  cursor: pointer;
+}
+
+.categories a {
+  color: white;
+  text-decoration: none;
+}
+
+.All {
+  background: #e74c3c;
+}
+
+
+
+.social-icons {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.social-icons span {
+  font-size: 1.5rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.social-icons span:hover {
+  color: #3498db;
+}
+
