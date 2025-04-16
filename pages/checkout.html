@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout</title>
+    <link rel="stylesheet" href="../styles/checkout.css">
+    <script src="../scripts/checkout.js" defer></script>
+</head>
+<body>
+    <div class="checkout-container">
+        <h1>Checkout</h1>
+        <div class="order-summary">
+            <h2>Order Summary</h2>
+            <div id="order-items">
+                <!-- Order items will be dynamically rendered here -->
+            </div>
+            <p class="total">Total: <span id="order-total">UGX0</span></p>
+        </div>
+        <div class="shipping-address">
+            <h2>Shipping Address</h2>
+            <p id="user-address">Loading...</p>
+            <button id="edit-address-btn">Edit Address</button>
+        </div>
+        <div class="payment">
+            <h2>Payment</h2>
+            <button id="confirm-payment-btn">Confirm Payment</button>
+        </div>
+    </div>
+</body>
+</html>

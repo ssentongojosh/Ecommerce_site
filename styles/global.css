@@ -13,6 +13,12 @@ nav {
   margin: 10px;
 }
 
+img.Company-logo {
+  width: 110px;
+  height: 64px;
+  
+}
+
 input#search {
   width: 330px;
   height: 28px;
@@ -65,15 +71,15 @@ div.contact p {
   overflow-wrap: break-word;
 }
 
-.footer{
-    background-color: gray;
-    margin-top: 20px;
+.footer {
+  background-color: gray;
+  margin-top: 20px;
 }
 
-.footer+p:last-child{
-    background-color:rgba(0, 0, 0, 0.1);
-    text-align: center;
-    padding: 1rem;
+.footer + p:last-child {
+  background-color: rgba(0, 0, 0, 0.1);
+  text-align: center;
+  padding: 1rem;
 }
 
 nav {
@@ -82,7 +88,7 @@ nav {
   justify-content: space-between;
   padding: 1rem 2rem;
   background: white;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   position: sticky;
   top: 0;
   z-index: 1000;
@@ -93,6 +99,9 @@ nav {
   font-weight: bold;
   color: #2c3e50;
   margin: 0;
+  background: linear-gradient(to right, red, orange);
+  color: transparent;
+  background-clip: text;
 }
 
 .search-icon {
@@ -100,16 +109,17 @@ nav {
   color: #666;
 }
 
-.profile, .cart {
+.profile,
+.cart {
   cursor: pointer;
   padding: 0.5rem;
   transition: all 0.3s ease;
 }
 
-.profile:hover, .cart:hover {
+.profile:hover,
+.cart:hover {
   color: #e74c3c;
 }
-
 
 div.search {
   flex: 0 1 500px;
@@ -157,12 +167,6 @@ main div.categories {
   text-decoration: none;
 }
 
-.All {
-  background: #e74c3c;
-}
-
-
-
 .social-icons {
   display: flex;
   gap: 1rem;
@@ -179,3 +183,120 @@ main div.categories {
   color: #3498db;
 }
 
+.icon-link svg {
+  width: 24px;
+  height: 24px;
+  fill: #555;
+  stroke: #555;
+}
+
+.icon-link svg:hover {
+  fill: black;
+  transition: ease 0.3s;
+}
+
+/* Existing desktop styles remain unchanged */
+
+/* Tablet (768px) */
+@media (max-width: 768px) {
+  nav {
+    padding: 1rem;
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+
+  .logo p {
+    font-size: 1.2rem;
+  }
+
+  div.search {
+    flex: 1 1 100%;
+    order: 3;
+  }
+
+  main div.categories {
+    padding: 0.8rem 1rem;
+    gap: 1rem;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .categories div {
+    white-space: nowrap;
+    padding: 0.5rem;
+  }
+
+  .footer {
+    flex-direction: column;
+    gap: 2rem;
+    padding: 2rem 1rem;
+  }
+
+  img.logo {
+    width: 150px;
+    height: 150px;
+  }
+}
+
+/* Mobile (480px) */
+@media (max-width: 480px) {
+  nav {
+    padding: 0.5rem;
+    top: -1px;
+  }
+
+  input#search {
+    padding: 0.6rem 1.5rem;
+  }
+
+  .logo p {
+    font-size: 1rem;
+  }
+
+  .profile,
+  .cart {
+    padding: 0.3rem;
+  }
+
+  .social-icons {
+    justify-content: center;
+  }
+
+  div.contact p {
+    font-size: 0.9rem;
+  }
+
+  .categories div {
+    font-size: 0.9rem;
+  }
+
+  img.logo {
+    width: 120px;
+    height: 120px;
+    margin: 5px;
+  }
+}
+
+/* Small Mobile (360px) */
+@media (max-width: 360px) {
+  nav {
+    justify-content: space-around;
+    gap: 0.5rem;
+  }
+
+  .logo p {
+    display: none;
+  }
+
+  img.Company-logo{
+    margin-right: auto;
+  }
+
+  input#search::placeholder {
+    font-size: 0.9rem;
+  }
+
+  .categories div {
+    font-size: 0.8rem;
+  }
+}

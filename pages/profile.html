@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Profile</title>
+    <link rel="stylesheet" href="../styles/profile.css">
+    <script src="../scripts/profile.js" defer></script>
+</head>
+<body>
+    <div class="profile-container">
+        <h1>User Profile</h1>
+        <div class="accordion">
+            <!-- Basic Details Section -->
+            <div class="accordion-item">
+                <button class="accordion-header">Basic Details</button>
+                <div class="accordion-content">
+                    <p><strong>Email:</strong> <span id="user-email">Loading...</span></p>
+                    <p><strong>Shipping Address:</strong> <span id="user-address">Loading...</span></p>
+                </div>
+            </div>
+
+            <!-- Payment Settings Section -->
+            <div class="accordion-item">
+                <button class="accordion-header">Payment Settings</button>
+                <div class="accordion-content">
+                    <p>Add a payment method:</p>
+                    <form id="payment-form">
+                        <label for="payment-method">Payment Method:</label>
+                        <select id="payment-method" required>
+                            <option value="mobile-money">Mobile Money</option>
+                            <option value="card">Credit/Debit Card</option>
+                        </select>
+                        <div id="payment-details"></div>
+                        <button type="submit">Save Payment Method</button>
+                    </form>
+                </div>
+            </div>
+
+            <!-- Close Account Section -->
+            <div class="accordion-item">
+                <button class="accordion-header">Close Account</button>
+                <div class="accordion-content">
+                    <p>We're sorry to see you go. Please confirm your email and password to close your account.</p>
+                    <form id="close-account-form">
+                        <label for="close-email">Email:</label>
+                        <input type="email" id="close-email" placeholder="Enter your email" required>
+                        <label for="close-password">Password:</label>
+                        <input type="password" id="close-password" placeholder="Enter your password" required>
+                        <button type="submit">Close Account</button>
+                    </form>
+                </div>
+            </div>
+
+            <!-- Log Out Section -->
+            <div class="accordion-item">
+                <button class="accordion-header">Log Out</button>
+                <div class="accordion-content">
+                    <p>Are you sure you want to log out?</p>
+                    <button id="logout-btn">Log Out</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
