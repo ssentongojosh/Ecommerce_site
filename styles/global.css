@@ -16,7 +16,6 @@ nav {
 img.Company-logo {
   width: 110px;
   height: 64px;
-  
 }
 
 input#search {
@@ -195,6 +194,105 @@ main div.categories {
   transition: ease 0.3s;
 }
 
+/* Base styles for social icons */
+.social-icons {
+  display: flex;
+  gap: 10px;
+}
+
+.social-icons span {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  color: white;
+  font-size: 18px;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.footer h4 {
+  font-size: 16px;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+  color: #f39c12;
+  text-align: center; /* Accent color for headings */
+}
+
+.footer a {
+  color: #ecf0f1; /* Light text color for links */
+  text-decoration: none;
+  display: block;
+  margin-bottom: 5px;
+  transition: color 0.3s ease;
+}
+
+.footer a:hover {
+  color: #f39c12; /* Highlight links on hover */
+}
+
+.footer .contact p {
+  margin: 5px 0;
+}
+
+.footer .contact a {
+  color: #f39c12; /* Accent color for email links */
+}
+
+/* Specific colors for each social platform */
+.social-icons .fa-facebook {
+  background-color: #3b5998; /* Facebook blue */
+}
+
+.social-icons .fa-twitter {
+  background-color: #1da1f2; /* Twitter blue */
+}
+
+.social-icons .fa-linkedin {
+  background-color: #0077b5; /* LinkedIn blue */
+}
+
+.social-icons .fa-whatsapp {
+  background-color: #25d366; /* WhatsApp green */
+}
+
+.social-icons .fa-instagram {
+  background: radial-gradient(
+    circle at 30% 30%,
+    #fdf497,
+    #fdf497,
+    #fd5949,
+    #d6249f,
+    #285aeb
+  ); /* Instagram gradient */
+}
+
+/* Hover effects */
+.social-icons span:hover {
+  transform: scale(1.1); /* Slight zoom effect */
+}
+
+.social-icons .fa-facebook:hover {
+  background-color: #2d4373; /* Darker Facebook blue */
+}
+
+.social-icons .fa-twitter:hover {
+  background-color: #1991db; /* Darker Twitter blue */
+}
+
+.social-icons .fa-linkedin:hover {
+  background-color: #005582; /* Darker LinkedIn blue */
+}
+
+.social-icons .fa-whatsapp:hover {
+  background-color: #1ebe57; /* Darker WhatsApp green */
+}
+
+.social-icons .fa-instagram:hover {
+  filter: brightness(0.9); /* Slightly darken Instagram gradient */
+}
+
 /* Existing desktop styles remain unchanged */
 
 /* Tablet (768px) */
@@ -288,7 +386,7 @@ main div.categories {
     display: none;
   }
 
-  img.Company-logo{
+  img.Company-logo {
     margin-right: auto;
   }
 
