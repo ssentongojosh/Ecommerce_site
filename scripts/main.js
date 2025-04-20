@@ -770,7 +770,7 @@ document.addEventListener("DOMContentLoaded", () => {
       const product = {
         name: e.target.closest(".item").querySelector(".item-name").textContent,
         price: e.target.closest(".item").querySelector(".price").textContent,
-        image: e.target.src,
+        image: '../assets/images/bag1.jpg',
         category: selectedCategory, // Dynamically set the category
         material: "Stainless Steel", // Example data
         application: "Formal and Casual Wear", // Example data
