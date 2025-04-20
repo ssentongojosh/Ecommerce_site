@@ -23,6 +23,8 @@
   cursor: pointer;
 }
 
+
+
 .showcase {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
@@ -75,7 +77,7 @@ img.item-image {
 
 .view-more {
   text-align: center;
-  margin: 0 0 2rem 0;
+  margin: 15px 0 2rem 0;
 }
 
 #view-more-btn {
@@ -204,6 +206,7 @@ img.item-image {
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   cursor: pointer;
   transition: background-color 0.3s ease, color 0.3s ease;
+
 }
 
 .cart-icon i {

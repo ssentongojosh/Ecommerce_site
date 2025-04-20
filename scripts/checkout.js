@@ -42,7 +42,10 @@ document.addEventListener("DOMContentLoaded", () => {
 
   // Edit address functionality
   editAddressBtn.addEventListener("click", () => {
-    const newAddress = prompt("Enter your new shipping address:", currentUser?.address || "");
+    const newAddress = prompt(
+      "Enter your new shipping address:",
+      currentUser?.address || ""
+    );
     if (newAddress) {
       currentUser.address = newAddress;
       localStorage.setItem("users", JSON.stringify(users));
@@ -54,7 +57,7 @@ document.addEventListener("DOMContentLoaded", () => {
   confirmPaymentBtn.addEventListener("click", () => {
     alert("Payment confirmed! Thank you for your purchase.");
     localStorage.removeItem("cart"); // Clear the cart
-    window.location.href = "./index.html"; // Redirect to home page
+    window.location.href = "../index.html"; // Redirect to home page
   });
 
   // Initialize the page

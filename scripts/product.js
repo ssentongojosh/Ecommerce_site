@@ -12,6 +12,7 @@ document.addEventListener("DOMContentLoaded", () => {
   // Retrieve the selected product from localStorage
   const product = JSON.parse(localStorage.getItem("selectedProduct")) || {};
   console.log("Selected Product:", product); // Debugging
+  console.log("product image path:", product.image);
 
   // Retrieve the items object from localStorage
   const items = JSON.parse(localStorage.getItem("items")) || {};

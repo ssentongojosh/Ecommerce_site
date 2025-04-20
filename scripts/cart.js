@@ -20,7 +20,7 @@ document.addEventListener("DOMContentLoaded", () => {
     let total = 0;
 
     cart.forEach((item, index) => {
-      const stock = stockData[item.name] || 0;
+      const stock = stockData[item.name] || 50;
       const quantity = item.quantity || 1;
       const price = parseFloat(item.price.replace("UGX", "").replace(",", ""));
       const subtotal = price * quantity;
@@ -54,7 +54,7 @@ document.addEventListener("DOMContentLoaded", () => {
     if (e.target.type === "number") {
       const index = e.target.getAttribute("data-index");
       const newQuantity = parseInt(e.target.value, 10);
-      const stock = stockData[cart[index].name] || 0;
+      const stock = stockData[cart[index].name] || 50;
 
       if (newQuantity > stock) {
         alert("Quantity exceeds stock!");
@@ -73,7 +73,7 @@ document.addEventListener("DOMContentLoaded", () => {
   cartItemsContainer.addEventListener("click", (e) => {
     const index = e.target.getAttribute("data-index");
     if (e.target.classList.contains("increase-btn")) {
-      const stock = stockData[cart[index].name] || 0;
+      const stock = stockData[cart[index].name] || 50;
       if (cart[index].quantity < stock) {
         cart[index].quantity = (cart[index].quantity || 1) + 1;
         localStorage.setItem("cart", JSON.stringify(cart));
