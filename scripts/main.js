@@ -819,21 +819,15 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 document.addEventListener("DOMContentLoaded", () => {
-  const categoriesToggle = document.getElementById("categories-toggle");
+  const categoriesToggle = document.querySelector(".All");
   const dropdown = document.querySelector(".dropdown");
+  console.log(categoriesToggle);
+  console.log(dropdown);
 
-  // Toggle dropdown visibility
-  categoriesToggle.addEventListener("click", (event) => {
-    event.stopPropagation(); // Prevent the click from propagating to the document
-    dropdown.classList.toggle("active");
-  });
-
-  // Close dropdown when clicking outside
-  document.addEventListener("click", (event) => {
-    if (
-      !categoriesToggle.contains(event.target) &&
-      !dropdown.contains(event.target)
-    ) {
+  categoriesToggle.addEventListener("click", () => {
+    if (dropdown.classList.contains("active")) {
+      dropdown.classList.add("active");
+    } else {
       dropdown.classList.remove("active");
     }
   });
